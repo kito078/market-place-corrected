@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Explore from "./pages/Explore";
 import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="offers" element={<Offers />} />
         <Route path="profile" element={<Profile />} />
       </Routes>
+      <Navbar />
     </Router>
   );
 }
